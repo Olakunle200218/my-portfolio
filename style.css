@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to bottom, #87ceeb,#ffff);
+  color: #000;
+  font-family: sans-serif;
+  transition: background-color 0.7s, color 0.3s;
+}
+.dark-mode{
+  background: linear-gradient(to top, #212121,#414345); 
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+ul{
+  display: flex;
+  gap: 20px;
+  font-size: larger;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+.hamburger{
+  cursor: pointer;
+  display: none;
+}
+.bar{
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: 0.5s ease-in-out;
+}
+#toggle-button{
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+}
+
+
+.logo{
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: linear gradient(90deg,#1e3a8a,#7c3aed);
+  padding-bottom: 19px;
+}
+
+#hero{
+  padding: 20px 0;
+}
+
+button{
+  width: 110px;
+  height: 45px;
+  background: #00bfff;
+}
+.button{
+border-radius: 10px;
+font-size: large;
+border: none;
+}
+button:hover{
+  box-shadow: inset #13638b 2px 2px 3px 2px;
+}
+.project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-heading{
+  margin: 20px 0;
+  width: 400px;
+}
+.project-info h5{
+  padding: 10px 0;
+  gap: 5px;
+}
+.year{
+  display: flex;
+  justify-content: space-between;
+}
+.info-stack{
+  display: flex;
+  justify-content: space-between;
+}
+.visit-btn{
+  margin: 10px 0;
+}
+
+.intro{
+  padding: 50px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  gap: 0px;
+}
+form div{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  height: 30px;
+  background: #414345;
+  border: none;
+}
+
+textarea{
+  background: #414345;
+  border: none;
+}
+
+
+@media(max-width:768px){
+  .hamburger{
+  display: block;
+  }
+
+  .nav-menu{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    position: fixed;
+    top: 80px;
+    right: -140%;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    transition: 0.5s ease-in-out;
+  }
+  /* To convert the hamburger to 'X' sign */
+  .hamburger.change .bar:nth-child(2){
+    /* visibility:hidden; */
+    opacity: 0;
+  }
+
+  .hamburger.change .bar:nth-child(1){
+    transform:translateY(9px) rotate(45deg);
+  }
+  .hamburger.change .bar:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* To display the nav menu when hamburger is clicked */
+  .nav-menu.change{
+    right:-1%;
+  }
+  
+  #hero{
+    padding: 20px;
+    }
+  .about, .contact, #project, #hero{
+    gap: 10px;
+  }
+  .project-heading{
+    width: 300px;
+  }
+  input{
+    width: 350px;
+  }
+  textarea{
+    width: 350px;
+  }
+}
