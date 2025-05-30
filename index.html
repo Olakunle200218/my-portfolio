@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Abduljabar Olakunle</title>
+</head>
+<body>
+    <header>
+        <nav class="container" id="header">
+            <div class="navbar">
+              <a href="index.html" class="logo">ANO.Tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="nav-link">Contact</a> 
+                    </li>
+                    <button id="toggle-button">
+                      <i id="theme-icon" class="fa-solid fa-sun"></i>
+                    </button>
+                </ul>
+                <div class="hamburger">
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                </div>
+            </div>
+    </header>
+    <section class='container-md' id='hero'>
+       <div class="row">
+           <div class='intro col-md-6'>
+           <h1>HI, I AM ABDULJABAR NASIRUDEEN OLAKUNLE</h1>
+           <p>A Nigeria based front-end developer passionate about
+             building responsive, accessible and user friendly website</p>
+           <a href="#contact"><button class='button'>Contact Me</button></a>  
+          </div> 
+          <div class="col-md-6">
+            <img src="images/photo.png" class='image w-100' style="border-radius:10px;"  alt="">
+          </div>
+       </div>
+    </section>
+    <a href="#header"><i class="fa-solid fa-arrow-up" id="icon"></i></a>
+    <hr />
+<section class="container-md" id="project">
+    <div class="project-heading">
+        <h1>VIEW PROJECT</h1>
+        <p>Here is the selected project that showcase my passion for Front-end web development</p>
+    </div>
+    <div class="project">
+       <div class="row project">
+          <div class="col-md-5 project-img">
+              <img src="images/Screenshot 2025-05-26 234000.png" class="w-100" alt="Screenshot">
+          </div>
+            <div class="col-md-7 project-body">
+                <h3>A Tailoring website</h3>
+                <p>Developed a responsive website for a tailoring service, 
+                 providing customers with an intuitive platform to explore services and make bookings</p>
+               <div class="project-info">
+                  <h5>PROJECT INFO</h5>
+                    <div class="year">
+                        <p>Year</p>
+                        <p>2025</p>
+                    </div>
+                    <div class="info-stack">
+                        <p>Development Stack</p>
+                        <div>
+                            <p>Languages: HTML5, CSS3, JavaScript</p>
+                            <p>FrameWork: Bootstraps CSS</p>
+                        </div>
+                    </div>
+                     <a href="https://crowncouture.vercel.app/index.html" target="_blank"><button class="visit-btn button">Visit Website</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <hr>
+    <section class='container-md'>
+        <div class="row about" id='about'>
+            <div class="col-md-3">
+              <h1>ABOUT ME</h1>
+            </div>
+            <div class="col-md-9">
+                <h4>Hi, I'm Abduljabar Nasirudeen Olakunle</h4>
+                <p>I'm a promising frontend web developer passionate about creating user-friendly and visually apealing website. 
+                   With solid foundation in HTML, CSS, Javascript and frameworks like React and Bootstrap CSS to bring designs to life. 
+                   I love experimenting with code to build responsive layouts and interactive features, often through personal projects or coding challenges.
+                   When I'm not learning new web technologies or tweaking my portfolio, you can find me exploring design inspiration or imagining my next project.
+                   I'm excited to colaborate,grow, and contribute to creating amazing web experience!
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class='container md' id="contact">
+        <div class="row contact">
+           <div class="col-md-6">
+               <h1>LET'S CONNECT</h1>
+               <p>Say hello at <a href="mailto:abduljabarolakunle20018@gmail.com">abduljabarolakunle20018@gmail.com</a></p>
+               <p>For more info. here's my <a href="new resume.pdf">resume</a></p>
+            </div>
+            <div class='form col-md-6'>
+                <form action="" method="post" id="contact-form">
+                    <input type="text" id="text" placeholder="Your Fullname" required>
+                    <input type="email" id="email" placeholder="Your email" required>
+                    <textarea type="message" id="message" placeholder="Your message" required rows="4"></textarea>
+                    <p id="errmsg" style="color: red;"></p>
+                    <button class="button" type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; 2025 ANO.Tech. All Rights Reserved</p>
+    </footer>
+    
+    <script src="index.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
